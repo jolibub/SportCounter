@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="controller.js"></script>
+  <link rel="stylesheet" href="controller.css">
+  <title>Controller</title>
+</head>
+<body>
+  <div>
+    <input type="radio" id="radio_countdown" name="countertype" value="countdown">
+    <label for="radio_countdown">Countdown</label><br>
+    <input type="radio" id="radio_counter" name="countertype" value="counter">
+    <label for="radio_counter">Counter</label>
+  </div>
+  <div>
+    <label for="targetValue">Target value</label>
+    <input id="targetValue" type="number">
+  </div>
+  <div>
+    <button onclick="actionStart()">Start</button>
+    <button onclick="actionStop()">Stop</button>
+    <button onclick="actionReset()">Reset</button>
+  </div>
+  <div>
+    <iframe src="./client.html"></iframe>
+  </div>
+</body>
+</html>
